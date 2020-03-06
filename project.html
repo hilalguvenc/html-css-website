@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+        body{
+        background-color: rgb(240, 240, 240);
+        overflow-x: hidden;
+        overflow-y: hidden
+        }
+        .header-container{
+        background-color:rgb(1, 79, 108);
+        color: white;
+        width: 1400px;
+        height: 280px;
+        position: relative;
+        right:8px;
+        bottom: 22px;
+       }
+       .main-header{
+        position: relative;
+        left: 160px;
+        font-size: 42px;
+        font-weight: bolder;
+        bottom: 15px;  
+       }
+       .sub-header{
+        position: relative;
+        left: 160px;
+        font-size: 22px;
+        font-weight: 100;
+        top: 50px;          
+       }
+       .header{
+        position: relative;
+        left: 595px;
+        font-size: 12px;
+        font-weight: 100;
+        top: 11px;   
+       }
+       .header-img{
+        border-radius: 20px;
+        padding: 10px;
+        height: 65px;
+        width: 200px;
+        bottom: 33px;
+        position: relative;
+        left: 12px;
+        text-align: center;  
+       }
+       .search-container{
+        background-color:white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-color:grey; 
+        color: rgb(41, 68, 78);
+        width: 920px;
+        bottom: 80px;
+        position: relative;
+        height: 65px;
+        left: 200px;
+        right: 0px;
+        z-index: 0;
+       }
+       .search-header{
+        position: relative;
+        left: 45px;
+        font-size: 33px;
+        font-weight: 100;
+        top: 7px;  
+       }
+       .search-sub{
+        position: relative;
+        left: 45px;
+        font-size: 16px;
+        bottom: 20px;   
+       }
+       .search-input{
+        color: rgb(41, 68, 78);
+        width: 360px;
+        height: 35px;
+        position:relative;
+        left: 520px;
+        z-index: 0;
+        bottom: 89px;
+        border-color: lightgrey;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+       }
+       .search-icon{
+        position: relative;
+        left: 478px;
+        width: 20px;
+        height: 24px;
+        bottom: 80px;
+        z-index: 0;
+       }
+       ul{
+        color: rgb(41, 68, 78); 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+        z-index: 1;
+        position: relative;
+       }
+       .first{
+        font-size: 20px; 
+        left: 155px;
+        bottom: 88px;
+        list-style-type: none;
+        font-weight: bold;
+       }
+       .second{
+        font-size: 15px; 
+        left: 400px;
+        bottom: 373px;
+       }
+       .third{
+        font-size: 15px; 
+        left: 545px;
+        bottom: 536px;
+       }
+       .fourth{
+        font-size: 10px; 
+        left: 730px;
+        bottom: 654px;
+       }
+       .fifth{
+        font-size: 10px; 
+        left: 920px;
+        bottom: 945px;
+       }
+       ul.first li a{
+        padding: 8px 16px;  
+       }
+       ul.second li a{
+        padding: 4px 8px;
+       }
+       ul.third li a{
+        padding: 2px 4px;
+       }
+       ul.fourth li a{
+        padding: 1px 3px;
+       }
+       ul.fifth li a{
+        padding: 1px 3px; 
+       }
+       li a{
+        display: block;
+        text-decoration: none;
+        color: rgb(41, 68, 78);  
+       }
+       ul.footer li{
+        display:inline-block;
+        padding: 15px;
+        position: relative;
+        bottom: 832px;
+        left: 155px;
+        font-size: 11px;
+       }
+       .word-b{
+        position: relative;
+        color: rgb(41, 68, 78); 
+        left: 1012px;
+        bottom: 985px;
+        font-weight: bold;
+        font-size: 20px;
+        list-style-type: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+       .word-bb{
+        position: relative;
+        color: rgb(41, 68, 78); 
+        left: 940px;
+        bottom: 978px;
+        font-size: 12px;
+        list-style-type: none;
+       } 
+       .word-s{
+        position: relative;
+        color: rgb(41, 68, 78); 
+        left: 985px;
+        bottom: 978px;
+        font-size: 12px;
+        list-style-type: none;
+       }
+       .word-nmbr{
+        position: relative;
+        color: rgb(41, 68, 78); 
+        left: 976px;
+        bottom: 977px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        list-style-type: none;
+       }
+       .word-c{
+        position: relative;
+        left: 853px;
+        bottom: 955px;
+        list-style-type: none;
+        font-size: 11px;
+       }
+       .footer-app{
+        position: relative;
+        width: 60px;
+        height: 20px;
+        bottom: 946px;
+        left: 952px;
+        opacity: 0.5;
+       }
+       .footer-google{
+        position: relative;
+        width: 60px;
+        height: 20px;
+        bottom: 970px;
+        left: 1028px;
+        opacity: 0.5;
+       }
+       .s-plus{
+         width: 8px;
+         height: 8px;
+         position:absolute;
+         left: 120px;
+         padding: 5px;
+       }
+       .s-minus{
+         width: 8px;
+         height: 8px;
+         position:absolute;
+         left: 120px;
+         padding: 5px;
+       }
+       .t-plus{
+         width: 8px;
+         height: 8px;
+         position:absolute;
+         left: 180px;
+         padding: 5px;
+       }
+       .t-minus{
+         width: 8px;
+         height: 8px;
+         position:absolute;
+         left: 180px;
+         padding: 5px;
+       }
+       .administ{
+        font-weight: bold;
+       }
+       .manager{
+        font-weight: bold;
+       }
+      
+        </style>
+<title>Project</title>
+</head>
+<body>
+
+<div class="header-container">
+<h2 class="sub-header">BAŞAKŞEHİR BELEDİYESİ</h2><h3 class="header">BAŞAKŞEHİR'DE NE NERDE</h3>
+<h1 class=main-header>PROJELERİMİZ</h1>
+<div>
+<img class="header-img" src="bilgievi.PNG" alt=""/>
+<img class="header-img" src="destekart.PNG" alt=""/>
+<img class="header-img" src="basaksehirli.PNG" alt=""/>
+<img class="header-img" src="engelliyasam.PNG" alt=""/>
+<img class="header-img" src="kültürsanat.PNG" alt=""/>
+<img class="header-img" src="saglikyasam.PNG" alt=""/>
+</div>
+</div>
+
+<div class="search-container">
+<h1 class="search-header">BİZDEN HABERİNİZ OLSUN</h1>
+<h4 class="search-sub">Hemen Kayıt Ol Etkinliklerden Önce Sen Haberdar Ol!</h4>
+<input class="search-input" placeholder="E-POSTA ADRESİNİZ" type="text"/>
+<img class="search-icon" src="https://img.icons8.com/ios-glyphs/30/000000/filled-sent.png">
+</div>
+<div>
+<ul class="first" >
+    <li><a href="#kurumsal">KURUMSAL</a></li>
+    <li><a href="#projeler">PROJELER</a></li>
+    <li><a href="#hizmetler">HİZMETLER</a></li>
+    <li><a href="#basaksehir">BAŞAKŞEHİR</a></li>
+    <li><a href="#sosyaltesisler">SOSYAL TESİSLER</a></li>
+    <li><a href="#kültürsanat">KÜLTÜR&SANAT</a></li>
+    <li><a href="#iletisim">İLETİŞİM</a></li>
+  </ul>
+
+  <ul class="second" >
+    <li><a href="#baskan">BAŞKAN<img class="s-plus" src="https://img.icons8.com/android/24/000000/plus.png"></a></li>
+    <li><a class="administ" href="#yönetim">YÖNETİM<img class="s-minus" src="https://img.icons8.com/android/24/000000/minus.png"></a></li>
+    <li><a href="#medya">MEDYA<img class="s-plus" src="https://img.icons8.com/android/24/000000/plus.png"></a></li>
+    <li><a href="#meclis">MECLİS<img class="s-plus" src="https://img.icons8.com/android/24/000000/plus.png"></a></li>
+    <li><a href="#encümen">ENCÜMEN<img class="s-plus" src="https://img.icons8.com/android/24/000000/plus.png"></a></li>
+    <li><a href="#gündem">GÜNDEM<img class="s-plus" src="https://img.icons8.com/android/24/000000/plus.png"></a></li>
+  </ul>
+
+  <ul class="third">
+    <li><a href="#organizasyonseması">Organizasyon Şeması</a></li>
+    <li><a href="#baskanyardimcilari">Başkan Yardımcıları<img class="t-plus" src="https://img.icons8.com/android/24/000000/plus.png"></a></li>
+    <li><a class="manager" href="#müdürlükler">Müdürlükler<img class="t-minus" src="https://img.icons8.com/android/24/000000/minus.png"></a></li>
+    <li><a href="#stratejikyönetim">Stratejik Yönetim</a></li>
+    <li><a href="#etikkomisyonu">Etik Komisyonu</a></li>
+  </ul>
+
+  <ul class="fourth">
+    <li><a href="#basinyayin">Basın Yayın ve Halkla İlişkiler</a></li>
+    <li><a href="#bilgiislem">Bilgi İşlem</a></li>
+    <li><a href="#destekhizmetleri">Destek Hizmetleri</a></li>
+    <li><a href="#emlakistimlak">Emlak ve İstimlak</a></li>
+    <li><a href="#fenisleri">Fen İşleri</a></li>
+    <li><a href="#gencliksporisleri">Gençlik ve Spor İşleri</a></li>
+    <li><a href="#hukukisleri">Hukuk İşleri</a></li>
+    <li><a href="#imarsehircilik">İmar ve Şehircilik</a></li>
+    <li><a href="#kültürsosyalisler">Kültür ve Sosyal İşler</a></li>
+    <li><a href="#malihizmetler">Mali Hizmetler</a></li>
+    <li><a href="#özelkalem">Özel Kalem</a></li>
+    <li><a href="#parkbahceler">Park ve Bahçeler</a></li>
+    <li><a href="#planproje">Plan ve Proje</a></li>
+    <li><a href="#ruhsatdenetim">Ruhsat ve Denetim</a></li>
+    <li><a href="#saglikisleri">Sağlık İşleri</a></li>
+    <li><a href="#sosyalyardimisleri">Sosyal Yardım İşleri</a></li>
+    <li><a href="#teftiskurulu">Teftiş Kurulu</a></li>
+    <li><a href="#temizlikisleri">Temizlik İşleri</a></li>
+    <li><a href="#yaziisleri">Yazı İşleri</a></li>
+    <li><a href="#zabita">Zabıta</a></li>
+  </ul>
+
+  <ul class="fifth">
+    <li><a href="#basinyayin">Basın Yayın ve Halkla İlişkiler</a></li>
+    <li><a href="#bilgiislem">Bilgi İşlem</a></li>
+    <li><a href="#destekhizmetleri">Destek Hizmetleri</a></li>
+    <li><a href="#emlakistimlak">Emlak ve İstimlak</a></li>
+    <li><a href="#fenisleri">Fen İşleri</a></li>
+    <li><a href="#gencliksporisleri">Gençlik ve Spor İşleri</a></li>
+    <li><a href="#hukukisleri">Hukuk İşleri</a></li>
+    <li><a href="#imarsehircilik">İmar ve Şehircilik</a></li>
+    <li><a href="#kültürsosyalisler">Kültür ve Sosyal İşler</a></li>
+    <li><a href="#malihizmetler">Mali Hizmetler</a></li>
+  </ul>
+</div>
+<div>
+  <footer>
+      <ul class="footer">
+      <li>KVKK</li>
+      <li>GİZLİ GÜVENLİK POLİTİKA BİLGİSİ</li>
+      <li>HİZMET SÖZLEŞMESİ</li>
+      <li>ANASAYFAYA DÖN</li>
+      </ul>
+      
+      <li class="word-b">BİKOM</li>
+      <li class="word-bb">BAŞAKŞEHİR BELEDİYESİ</li>
+      <li class="word-s">SİZE DAHA YAKIN</li>
+      <li class="word-nmbr">444 0 669</li>
+      <li class="word-c">@COPYRIGHT 2020 BAŞAKŞEHİR BELEDİYESİ</li>
+      <li><img class="footer-app" src="https://seeklogo.com/images/D/download-on-the-app-store-flat-badge-logo-4582694404-seeklogo.com.png"/></li>
+      <li><img class="footer-google" src="https://seeklogo.com/images/G/google-play-store-logo-3A03C3B8AD-seeklogo.com.png"/></li>
+  </footer>
+</div>
+</body>
+</html>
